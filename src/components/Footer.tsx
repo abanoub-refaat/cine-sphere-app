@@ -3,7 +3,7 @@ import './Footer.css';
 import Image from 'next/image';
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer bg-dark text-white px-12 py-5">
       <div className="footer-container">
         <div className="footer-section footer-branding">
           <Image src="footer-logo.svg" width={187} height={57} alt="footer-logo" className="footer-logo" /> 
