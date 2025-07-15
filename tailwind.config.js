@@ -21,7 +21,7 @@ module.exports = {
           900: "#5103af",
           950: "#300077",
         },
-        bgDark: "#1A0B28",
+        dark: "#1A0B28",
         white: "#FFFFFF",
         starColor: "#FFC700",
         black: "#000000",
