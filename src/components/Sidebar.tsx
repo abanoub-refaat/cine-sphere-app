@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Button from "@/components/Button";
-function NavbarMobile() {
+function Sidebar() {
   const router = useRouter();
   const [isClicked, setIsClicked] = useState(false);
 
@@ -23,13 +23,13 @@ function NavbarMobile() {
         <img src="icons/hamburger-menu.svg" alt="menu" />
       </div>
       <div
-        className={
+        className={`fixed h-full w-full bg-primary-400 transition-all duration-300 ease-in-out p-5 ${
           isClicked
-            ? "absolute transition-all duration-300"
-            : "absolute transition-all duration-300 -top-full -right-full"
-        }
+            ? "right-0 translate-x-0 top-0 flex flex-col gap-12 items-center"
+            : "right-0 translate-x-full top-0"
+        }`}
       >
-        <div className="flex gap-8 items-center">
+        <div className="flex gap-28 items-center justify-between mt-4">
           <img
             src={"icons/nav-logo.svg"}
             alt="cine sphere logo"
@@ -44,32 +44,55 @@ function NavbarMobile() {
             onClick={handelClick}
           />
         </div>
-        <div className="flex flex-col text-white text-sm justify-center items-start gap-6 mr-16 h-dvh">
-          <Link href={""} className="hover:text-primary-700">
+        <div className="flex flex-col text-white text-sm gap-5 items-center py-5 w-full overflow-auto text-center">
+          <Link
+            href={""}
+            className="hover:text-primary-700 bg-primary-500 p-5 w-full"
+          >
             Upcomming
           </Link>
-          <Link href={""} className="hover:text-primary-700">
+          <Link
+            href={""}
+            className="hover:text-primary-700 bg-primary-400  p-5 w-full"
+          >
             Shows
           </Link>
-          <Link href={""} className="hover:text-primary-700">
+          <Link
+            href={""}
+            className="hover:text-primary-700 bg-primary-500  p-5 w-full"
+          >
             Fanarts
           </Link>
-          <Link href={""} className="hover:text-primary-700">
+          <Link
+            href={""}
+            className="hover:text-primary-700 bg-primary-400  p-5 w-full"
+          >
             Plans
           </Link>
-          <Link href={""} title="Community" className="hover:text-primary-700">
+          <Link
+            href={""}
+            title="Community"
+            className="hover:text-primary-700 bg-primary-500  p-5 w-full"
+          >
             Community
           </Link>
-          <Link href={""} className="hover:text-primary-700">
+          <Link href={""} className="hover:text-primary-700  p-5 w-full">
             Account
           </Link>
         </div>
-        <div className="flex gap-7 items-center">
+        <div className="flex gap-28 items-center justify-center px-2">
           <Button title="Join Now" hasIcon={false} />
+          <div className="cursor-pointer">
+            <img
+              src={"icons/search.svg"}
+              style={{ width: 20, height: 20 }}
+              alt="search"
+            />
+          </div>
         </div>
       </div>
     </nav>
   );
 }
 
-export default NavbarMobile;
+export default Sidebar;
