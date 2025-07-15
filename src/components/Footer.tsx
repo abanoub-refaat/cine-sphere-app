@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="flex flex-wrap justify-between gap-y-10">
         <div className="flex flex-col basis-full md:basis-[50%] lg:basis-[25%]">
           <Image
-            src="/footer-logo.svg"
+            src="icons/footer-logo.svg"
             width={187}
             height={57}
             alt="footer-logo"
@@ -64,6 +64,7 @@ const Footer = () => {
     </footer>
   );
 };
+
 
 
 export default Footer;
