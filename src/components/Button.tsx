@@ -5,11 +5,9 @@ interface Props {
   title: string;
   hasIcon: boolean;
   iconName?: string;
-  width?: number;
-  height?: number;
 }
 
-function Button({ title, hasIcon, iconName, width = 15, height = 15 }: Props) {
+function Button({ title, hasIcon, iconName }: Props) {
   return (
     <button
       type="button"
@@ -20,7 +18,6 @@ function Button({ title, hasIcon, iconName, width = 15, height = 15 }: Props) {
         <img
           src={iconName ?? ""}
           alt={iconName ?? ""}
-          style={{ width: width, height: height }}
           className="items-center"
         />
       ) : (
