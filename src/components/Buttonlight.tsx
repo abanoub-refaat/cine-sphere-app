@@ -1,13 +1,16 @@
-import React from 'react';
+/* eslint-disable @next/next/no-img-element */
+import React from "react";
 
 interface Props {
   title: string;
   hasIcon: boolean;
   iconName?: string;
 }
-function Buttonlight ({ title, hasIcon, iconName }: Props) {
+function Buttonlight({ title, hasIcon, iconName }: Props) {
   return (
-    <button type="button" className="bg-[#72678dff] text-[#FFFFFF] text-sm hover:bg-primary-800 flex justify-center gap-2 rounded-tr-2xl rounded-bl-2xl w-36
+    <button
+      type="button"
+      className="bg-[#72678dff] bg-opacity-5	 text-[#FFFFFF] text-sm hover:bg-primary-800 flex justify-center gap-2 rounded-tr-2xl rounded-bl-2xl w-36
           py-2 "
     >
       {hasIcon ? (
@@ -21,8 +24,7 @@ function Buttonlight ({ title, hasIcon, iconName }: Props) {
       )}
       {title}
     </button>
-    
   );
-};
+}
 
 export default Buttonlight;

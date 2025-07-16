@@ -1,13 +1,15 @@
-import React from 'react';
+import React from "react";
 
 interface Props {
   title: string;
   hasIcon: boolean;
   iconName?: string;
 }
-function ButtonOutline ({ title, hasIcon, iconName }: Props) {
+function ButtonOutline({ title, hasIcon, iconName }: Props) {
   return (
-    <button type="button" className="bg-primary-200 text-primary-500 border-2 border-primary-500 text-sm hover:bg-primary-300 flex justify-center gap-2 rounded-tr-2xl rounded-bl-2xl w-36
+    <button
+      type="button"
+      className="bg-primary-200 bg-opacity-5	 text-primary-500 border-2 border-primary-500 text-sm hover:bg-primary-300 flex justify-center gap-2 rounded-tr-2xl rounded-bl-2xl w-36
           py-2 "
     >
       {hasIcon ? (
@@ -21,9 +23,7 @@ function ButtonOutline ({ title, hasIcon, iconName }: Props) {
       )}
       {title}
     </button>
-    
   );
-};
+}
 
 export default ButtonOutline;
-
