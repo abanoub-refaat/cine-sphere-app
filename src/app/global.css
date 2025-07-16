@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav-screen .side-bar {
+  display: none;
+}
+
+.nav-screen .nav-bar {
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .nav-screen .nav-bar {
+    display: none;
+  }
+
+  .nav-screen .side-bar {
+    display: flex;
+  }
+}

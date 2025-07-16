@@ -1,12 +1,13 @@
-import Footer from "@/components/Footer";
-
-
+import HomeSlider from "@/components/HomeSlider";
+import FooterEmail from "@/components/FooterEmail";
+import AccordionSection from "@/components/AccordionSection";
 
 export default function Home() {
   return (
-    <div className="">
-      
-      <Footer  />
-    </div>
+    <>
+      <HomeSlider />
+      <AccordionSection />
+      <FooterEmail />
+    </>
   );
 }
