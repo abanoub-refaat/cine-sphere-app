@@ -3,12 +3,12 @@ import Button from "./Button";
 
 const FooterEmail = () => {
   return (
-    <div className="relative w-full h-72 bg-cover bg-center flex items-center justify-center px-4"
+    <div
+      className="relative w-full p-12 sm:p-20 bg-cover bg-center flex items-center justify-center px-4"
       style={{ backgroundImage: "url('/Images/EmailFooter.png')" }}
     >
       <div className="flex flex-col items-center gap-6 text-white text-center max-w-4xl w-full">
-        
-        <p className="text-2xl font-semibold">
+        <p className="text-lg sm:text-2xl font-semibold">
           Join Now with your Email Address and Choose your plan to get Started.
         </p>
 
@@ -26,5 +26,3 @@ const FooterEmail = () => {
 };
 
 export default FooterEmail;
-
-
