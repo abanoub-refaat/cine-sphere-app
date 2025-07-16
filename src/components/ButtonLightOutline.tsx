@@ -10,7 +10,7 @@ function ButtonLightOutline({ title, hasIcon, iconName }: Props) {
   return (
     <button
       type="button"
-      className="bg-[#9279c1ff] bg-opacity-5	 text-white border-2 border-white text-sm hover:bg-primary-500 flex justify-center gap-2 rounded-tr-2xl rounded-bl-2xl w-36
+      className="bg-[#9279c1ff] bg-opacity-5 items-center text-white border-2 border-white text-sm hover:bg-primary-500 flex justify-center gap-2 rounded-tr-2xl rounded-bl-2xl w-36
           py-2 "
     >
       {hasIcon ? (
