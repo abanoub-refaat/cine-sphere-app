@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Button from "@/components/Button";
+import MovieInfo from "@/components/MovieInfo";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -16,102 +16,64 @@ function HomeSlider() {
         className="mySwipe text-white w-full"
       >
         <SwiperSlide>
-          <div className="bg-[url(/images/movie-1.png)] bg-cover flex flex-col justify-start items-start gap-4 pt-60 p-20">
-            <div className="movie-info flex flex-col my-5">
-              <p className="text-sm font-light sm:hidden">2019</p>
-              <h2 className="font-bold text-4xl">Avengers:Endgame</h2>
-              <p className="text-xs font-light">2 hr 3 min • Action • Sci-fi</p>
-            </div>
-            <p className="w-6/12 font-extralight">
-              After Thanos, an intergalactic warlord, disintegrates half of the
+          <div
+            className={`bg-[url(/images/movie-1.png)] bg-cover flex flex-col justify-start items-start gap-4 pt-60 p-20`}
+          >
+            <MovieInfo
+              year={2019}
+              title="Avengers: Endgame"
+              data={["2 hr 3 min", "Action", "Sci-fi"]}
+              description=" After Thanos, an intergalactic warlord, disintegrates half of the
               universe, the Avengers must reunite and assemble again to
-              reinvigorate their trounced allies and restore balance.
-            </p>
-            <Button
-              title="Play Now"
-              hasIcon={true}
-              iconName="icons/ph_play-fill.svg"
+              reinvigorate their trounced allies and restore balance."
             />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="bg-[url(/images/movie-2.png)] bg-cover flex flex-col justify-start items-start gap-4 pt-60 p-20">
-            <div className="movie-info flex flex-col my-5">
-              <p className="text-sm font-light">2022</p>
-              <h2 className="font-bold text-4xl">The Batman</h2>
-              <p className="text-xs font-light">2 hr 56 min • Action • Drama</p>
-            </div>
-            <p className="w-6/12 font-extralight">
-              Batman is called to intervene when the mayor of Gotham City is
+            <MovieInfo
+              year={2022}
+              title="The Batman"
+              data={["2 hr 56 min ", "Action", "Drama"]}
+              description="Batman is called to intervene when the mayor of Gotham City is
               murdered. Soon, his investigation leads him to uncover a web of
-              corruption, linked to his own dark past.
-            </p>
-            <Button
-              title="Play Now"
-              hasIcon={true}
-              iconName="icons/ph_play-fill.svg"
+              corruption, linked to his own dark past."
             />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
           <div className="bg-[url(/images/movie-3.png)] bg-cover flex flex-col justify-start items-start gap-4 pt-60 p-20">
-            <div className="movie-info flex flex-col my-5">
-              <p className="text-sm font-light">2020</p>
-              <h2 className="font-bold text-4xl">Jujutsu Kaisen</h2>
-              <p className="text-xs font-light">2 Seasons • Action • Drama</p>
-            </div>
-            <p className="w-6/12 font-extralight">
-              After a boy is thrust into the world of the supernatural, he must
+            <MovieInfo
+              year={2020}
+              title="Jujutsu Kaisen"
+              data={["2 Seasons", "Action", "Drama"]}
+              description="After a boy is thrust into the world of the supernatural, he must
               rise to the challenge in order to prevent demons from obliterating
-              all that he holds dear.
-            </p>
-            <Button
-              title="Play Now"
-              hasIcon={true}
-              iconName="icons/ph_play-fill.svg"
+              all that he holds dear."
             />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
           <div className="bg-[url(/images/movie-4.png)] bg-cover flex flex-col justify-start items-start gap-4 pt-60 p-20">
-            <div className="movie-info flex flex-col my-5">
-              <p className="text-sm font-light">2023</p>
-              <h2 className="font-bold text-4xl">
-                Spiderman: Across the Spiderverse
-              </h2>
-              <p className="text-xs font-light">2 hr 20 min • Action • Drama</p>
-            </div>
-            <p className="w-6/12 font-extralight">
-              In an attempt to curb the Spot, a scientist, from harnessing the
+            <MovieInfo
+              year={2023}
+              title="Spiderman: Across the Spiderverse"
+              data={["2 hr 20 min", "Action", "Drama"]}
+              description="In an attempt to curb the Spot, a scientist, from harnessing the
               power of the multiverse, Miles Morales joins forces with Gwen
-              Stacy.
-            </p>
-            <Button
-              title="Play Now"
-              hasIcon={true}
-              iconName="icons/ph_play-fill.svg"
+              Stacy."
             />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
           <div className="bg-[url(/images/movie-5.png)] bg-cover flex flex-col justify-start items-start gap-4 pt-60 p-20">
-            <div className="movie-info flex flex-col my-5">
-              <p className="text-sm font-light">2023</p>
-              <h2 className="font-bold text-4xl">Attack on Titan</h2>
-              <p className="text-xs font-light">4 Seasons • Action • Drama</p>
-            </div>
-            <p className="w-6/12 font-extralight">
-              Humankind constructs lofty walls to safeguard itself from immense
+            <MovieInfo
+              year={2023}
+              title="Attack on Titan"
+              data={["4 Seasons", "Action", "Drama"]}
+              description="Humankind constructs lofty walls to safeguard itself from immense
               creatures, the Titans. It battles to regain its land captured by
-              the Titans which is not easy.
-            </p>
-            <Button
-              title="Play Now"
-              hasIcon={true}
-              iconName="icons/ph_play-fill.svg"
+              the Titans which is not easy."
             />
           </div>
         </SwiperSlide>
