@@ -12,17 +12,17 @@ interface Props {
 
 function MovieInfo({ year, title, data, description }: Props) {
   return (
-    <div className="p-6 overflow-auto">
-      <div className="movie-info flex flex-col my-2 sm:my-5">
-        <p className="hidden sm:block text-sm font-light">{year}</p>
-        <h2 className="font-bold text-xl py-2 sm:text-4xl">{title}</h2>
+    <div className="p-6">
+      <div className="flex flex-col sm:my-5">
+        <p className="hidden sm:block text-sm">{year}</p>
+        <h2 className="font-bold text-xl py-1 sm:py-2 sm:text-4xl">{title}</h2>
         <p className="hidden sm:block text-xs py-2">
           {data.map((el, index) =>
             index === data.length - 1 ? el : el + " • "
           )}
         </p>
       </div>
-      <p className="text-sm font-extralight sm:w-6/12 mb-4 sm:mb-5 ">
+      <p className="text-xs sm:text-sm font-extralight text-gray-100 w-full sm:w-6/12 mb-4 sm:mb-5 ">
         {description}
       </p>
       <div className="flex gap-2">

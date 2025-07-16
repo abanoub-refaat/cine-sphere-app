@@ -10,7 +10,7 @@ function Sidebar() {
 
   const handelClick = () => setIsClicked(!isClicked);
   return (
-    <nav className="flex w-full justify-between items-center bg-primary-400 py-10 px-12 h-12">
+    <nav className="side-bar flex z-10 bg-black w-full justify-between items-center py-10 px-12 h-12">
       <div className="cursor-pointer">
         <img
           src={"icons/nav-logo.svg"}
@@ -23,16 +23,17 @@ function Sidebar() {
         <img src="icons/hamburger-menu.svg" alt="menu" />
       </div>
       <div
-        className={`fixed h-full w-full bg-primary-400 transition-all duration-300 ease-in-out p-5 ${
+        className={`fixed z-30 h-full w-full bg-black transition-all duration-300 ease-in-out p-5 ${
           isClicked
             ? "right-0 translate-x-0 top-0 flex flex-col gap-12 items-center"
             : "right-0 translate-x-full top-0"
         }`}
       >
-        <div className="flex gap-28 items-center justify-between mt-4">
+        <div className="flex items-center justify-between mt-4">
           <img
             src={"icons/nav-logo.svg"}
             alt="cine sphere logo"
+            className="mr-60"
             style={{ height: 30 }}
             onClick={() => router.push("/")}
           />
