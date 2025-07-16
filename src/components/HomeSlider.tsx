@@ -17,7 +17,7 @@ function HomeSlider() {
       >
         <SwiperSlide>
           <div
-            className={`bg-[url(/images/movie-1.png)] bg-cover flex flex-col justify-start items-start gap-4 pt-60 p-20`}
+            className={`bg-[url(/images/movie-1.png)] bg-cover bg-center flex flex-col justify-start items-start gap-4 pt-3 p-6 md:pt-60 md:p-20`}
           >
             <MovieInfo
               year={2019}
@@ -30,7 +30,7 @@ function HomeSlider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-[url(/images/movie-2.png)] bg-cover flex flex-col justify-start items-start gap-4 pt-60 p-20">
+          <div className="bg-[url(/images/movie-2.png)] bg-cover bg-center flex flex-col justify-start items-start gap-4 pt-3 p-6 md:pt-60 md:p-20">
             <MovieInfo
               year={2022}
               title="The Batman"
@@ -42,7 +42,7 @@ function HomeSlider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-[url(/images/movie-3.png)] bg-cover flex flex-col justify-start items-start gap-4 pt-60 p-20">
+          <div className="bg-[url(/images/movie-3.png)] bg-cover bg-center flex flex-col justify-start items-start gap-4 pt-3 p-6 md:pt-60 md:p-20">
             <MovieInfo
               year={2020}
               title="Jujutsu Kaisen"
@@ -54,7 +54,7 @@ function HomeSlider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-[url(/images/movie-4.png)] bg-cover flex flex-col justify-start items-start gap-4 pt-60 p-20">
+          <div className="bg-[url(/images/movie-4.png)] bg-cover bg-center flex flex-col justify-start items-start gap-4 pt-3 p-6 md:pt-60 md:p-20">
             <MovieInfo
               year={2023}
               title="Spiderman: Across the Spiderverse"
@@ -66,7 +66,7 @@ function HomeSlider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-[url(/images/movie-5.png)] bg-cover flex flex-col justify-start items-start gap-4 pt-60 p-20">
+          <div className="bg-[url(/images/movie-5.png)] bg-cover bg-center flex flex-col justify-start items-start gap-4 pt-3 p-6 md:pt-60 md:p-20">
             <MovieInfo
               year={2023}
               title="Attack on Titan"
