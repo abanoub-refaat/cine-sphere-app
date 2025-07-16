@@ -8,7 +8,7 @@ import Link from "next/link";
 const Navbar = () => {
   const router = useRouter();
   return (
-    <nav className="flex w-full justify-between items-center flex-row sticky top-0 z-50 bg-primary-950 bg-opacity-50 py-10 px-24 h-12">
+    <nav className="flex w-full justify-between items-center flex-row sticky top-0 z-50 bg-primary-700 bg-opacity-20 py-10 px-24 h-12">
       <div className="cursor-pointer">
         <img
           src={"icons/nav-logo.svg"}
