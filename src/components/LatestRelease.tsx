@@ -21,7 +21,7 @@ function LatestRelease() {
         className="mySwiper py-10 bg-black"
         breakpoints={{
           320: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 10,
           },
           480: {
@@ -29,20 +29,20 @@ function LatestRelease() {
             spaceBetween: 15,
           },
           768: {
-            slidesPerView: 3,
+            slidesPerView: 4,
             spaceBetween: 30,
           },
           1024: {
-            slidesPerView: 4,
-            spaceBetween: 40,
+            slidesPerView: 5,
+            spaceBetween: 20,
           },
           1280: {
-            slidesPerView: 5,
-            spaceBetween: 50,
+            slidesPerView: 6,
+            spaceBetween: 20,
           },
           1440: {
-            slidesPerView: 6,
-            spaceBetween: 60,
+            slidesPerView: 7,
+            spaceBetween: 20,
           },
         }}
       >

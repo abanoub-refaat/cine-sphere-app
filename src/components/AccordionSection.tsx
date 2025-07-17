@@ -11,7 +11,7 @@ function AccordionSection() {
   };
   return (
     <div className="flex flex-col justify-center items-center transition-all duration-300 content-center gap-8 bg-black p-8 sm:p-20">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <Accordion
           id={0}
           question="What is Cine Sphere?"
