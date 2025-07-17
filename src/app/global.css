@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Navbar and Sidebar Toggoling */
 .nav-screen .side-bar {
   display: none;
 }
@@ -18,4 +19,46 @@
   .nav-screen .side-bar {
     display: flex;
   }
+}
+
+/* Swiper re-configurations */
+
+.swiper-pagination-bullet {
+  background-color: white !important;
+}
+
+.latest-release .swiper-pagination-bullet {
+  display: none !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 12px !important;
+  height: 12px !important;
+  background-color: #7300ff !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: "" !important;
+  display: none !important;
+}
+
+.swiper-button-prev {
+  background-image: url("/icons/Left.svg") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px 40px;
+  width: 40px !important;
+  height: 40px !important;
+  left: 10px !important;
+}
+
+.swiper-button-next {
+  background-image: url("/icons/right-arrow.svg") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px 40px;
+  width: 40px !important;
+  height: 40px !important;
+  right: 10px !important;
 }
