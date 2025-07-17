@@ -11,6 +11,9 @@ function AccordionSection() {
   };
   return (
     <div className="flex flex-col justify-center items-center transition-all duration-300 content-center gap-8 bg-black p-8 sm:p-20">
+      <h2 className="m-4 text-center text-3xl font-bold text-white">
+        Frequently asked questions
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <Accordion
           id={0}
