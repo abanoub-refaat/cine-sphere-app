@@ -1,30 +1,39 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import React, { useState } from "react";
+import React from "react";
 
 interface Props {
   question: string;
   answer: string;
   id: number;
+  isOpen: boolean;
+  onToggle: (id: number) => void;
 }
 
-function Accordion({ question, answer, id }: Props) {
-  const [isOpen, setIsOpen] = useState(false);
+function Accordion({ question, answer, id, isOpen, onToggle }: Props) {
   return (
-    <div className="flex justify-between w-80 flex-col rounded-lg bg-opacity-55 bg-dark text-white p-5 m-2">
+    <div className="flex justify-between w-96 flex-col rounded-lg bg-opacity-55 bg-dark text-white p-5 m-2">
       <button
         className="flex justify-between items-start text-start"
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => onToggle(id)}
       >
         <span className="text-lg font-medium">{question}</span>
-        <img
-          src="icons/btn-dropdown.svg"
-          alt="button dropdown menu"
-          style={{ width: 30, height: 30 }}
-        />
+        {isOpen ? (
+          <img
+            src="icons/btn-dropdown-reverse-2.svg"
+            alt="button dropdown menu"
+            style={{ width: 30, height: 30 }}
+          />
+        ) : (
+          <img
+            src="icons/btn-dropdown.svg"
+            alt="button dropdown menu"
+            style={{ width: 30, height: 30 }}
+          />
+        )}
       </button>
-      {isOpen && id == id ? (
-        <span className="text-lg font-medium mt-4">{answer}</span>
+      {isOpen ? (
+        <span className="text-lg font-medium mt-4 duration-300">{answer}</span>
       ) : (
         ""
       )}
