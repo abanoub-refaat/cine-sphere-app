@@ -31,6 +31,10 @@
   display: none !important;
 }
 
+.trending-movies .swiper-pagination-bullet {
+  display: none !important;
+}
+
 .swiper-pagination-bullet-active {
   width: 12px !important;
   height: 12px !important;

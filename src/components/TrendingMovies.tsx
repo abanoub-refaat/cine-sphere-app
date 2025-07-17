@@ -7,11 +7,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import { Navigation } from "swiper/modules";
-
-function LatestRelease() {
+function TrendingMovies() {
   return (
-    <div className="p-14 latest-release">
-      <h2 className="text-3xl font-bold text-white my-10">Latest Releases</h2>
+    <div className="px-14 trendin-movies">
+      <h2 className="text-3xl font-bold text-white mb-10">
+        Trending Movies & Shows
+      </h2>
       <Swiper
         slidesPerView={7}
         spaceBetween={20}
@@ -48,16 +49,9 @@ function LatestRelease() {
       >
         <SwiperSlide>
           <MovieCard
-            title="Deadpool & Wolverine"
-            image="/images/Deadpool & Wolverine.png"
-            data={["Action", "Sci-fi"]}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <MovieCard
-            title="Fast X"
-            image="/images/Fast X.png"
-            data={["Action", "Thriller"]}
+            title="Breaking Bad"
+            image="/images/bb.png"
+            data={["Drama", "crime"]}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -69,9 +63,23 @@ function LatestRelease() {
         </SwiperSlide>
         <SwiperSlide>
           <MovieCard
+            title="Avatar"
+            image="/images/avatar (2).png"
+            data={["Action", "Thriller"]}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <MovieCard
             title="John Wick 4"
             image="/images/jw-4.png"
             data={["Action", "Thriller"]}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <MovieCard
+            title="Top Gun"
+            image="images/top-gun.png"
+            data={["Action", "Anime", "Top"]}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -95,16 +103,9 @@ function LatestRelease() {
             data={["Action", "Anime", "Top"]}
           />
         </SwiperSlide>
-        <SwiperSlide>
-          <MovieCard
-            title="Top Gun"
-            image="images/top-gun.png"
-            data={["Action", "Anime", "Top"]}
-          />
-        </SwiperSlide>
       </Swiper>
     </div>
   );
 }
 
-export default LatestRelease;
+export default TrendingMovies;
