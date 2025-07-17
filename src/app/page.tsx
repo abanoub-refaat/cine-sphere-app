@@ -8,6 +8,7 @@ import TrendingMovies from "@/components/TrendingMovies";
 export default function Home() {
   return (
     <>
+      <h1>hello</h1>
       <HomeSlider />
       <LatestRelease />
       <TrendingMovies />
