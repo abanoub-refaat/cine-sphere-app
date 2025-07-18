@@ -12,7 +12,7 @@ interface Props {
 
 function MovieInfo({ year, title, data, description }: Props) {
   return (
-    <div className="p-6">
+    <div className="p-16 pt-24">
       <div className="flex flex-col sm:my-5">
         <p className="hidden sm:block text-sm">{year}</p>
         <h2 className="font-bold text-xl py-1 sm:py-2 sm:text-4xl">{title}</h2>

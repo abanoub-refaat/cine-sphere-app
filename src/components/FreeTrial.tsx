@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import Button from "./Button";
 const FreeTrial = () => {
   return (
@@ -9,7 +9,8 @@ const FreeTrial = () => {
             Start your free trial today!
           </h3>
           <p className="text-lg text-white mt-2">
-            Join Now with your Email Address and Choose your plan to get Started.
+            Join Now with your Email Address and Choose your plan to get
+            Started.
           </p>
         </div>
         <div className="flex items-center ml-4">

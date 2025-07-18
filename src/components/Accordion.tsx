@@ -12,7 +12,7 @@ interface Props {
 
 function Accordion({ question, answer, id, isOpen, onToggle }: Props) {
   return (
-    <div className="flex justify-between w-96 flex-col rounded-lg bg-opacity-55 bg-dark text-white p-5 m-2">
+    <div className="flex justify-between w-96 flex-col transition-all duration-300 rounded-lg bg-opacity-55 bg-dark text-white p-5 m-2">
       <button
         className="flex justify-between items-start text-start"
         onClick={() => onToggle(id)}

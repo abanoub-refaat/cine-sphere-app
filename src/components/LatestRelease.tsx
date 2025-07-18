@@ -11,7 +11,9 @@ import { Navigation } from "swiper/modules";
 function LatestRelease() {
   return (
     <div className="p-14 latest-release">
-      <h2 className="text-3xl font-bold text-white my-10">Latest Releases</h2>
+      <h2 className="text-xl sm:text-3xl font-bold text-white my-10">
+        Latest Releases
+      </h2>
       <Swiper
         slidesPerView={7}
         spaceBetween={20}
@@ -49,56 +51,56 @@ function LatestRelease() {
         <SwiperSlide>
           <MovieCard
             title="Deadpool & Wolverine"
-            image="/images/Deadpool & Wolverine.png"
+            image="/Images/Deadpool & Wolverine.png"
             data={["Action", "Sci-fi"]}
           />
         </SwiperSlide>
         <SwiperSlide>
           <MovieCard
             title="Fast X"
-            image="/images/Fast X.png"
+            image="/Images/Fast X.png"
             data={["Action", "Thriller"]}
           />
         </SwiperSlide>
         <SwiperSlide>
           <MovieCard
             title="Dune Part II"
-            image="/images/dunte.png"
+            image="/Images/dunte.png"
             data={["Action", "Thriller"]}
           />
         </SwiperSlide>
         <SwiperSlide>
           <MovieCard
             title="John Wick 4"
-            image="/images/jw-4.png"
+            image="/Images/jw-4.png"
             data={["Action", "Thriller"]}
           />
         </SwiperSlide>
         <SwiperSlide>
           <MovieCard
             title="The Last Of Us"
-            image="/images/last-of-us (1).png"
+            image="/Images/last-of-us (1).png"
             data={["Action", "Thriller"]}
           />
         </SwiperSlide>
         <SwiperSlide>
           <MovieCard
             title="The Marvels"
-            image="images/the-marvels.png"
+            image="/Images/the-marvels.png"
             data={["Action", "Thriller"]}
           />
         </SwiperSlide>
         <SwiperSlide>
           <MovieCard
             title="Attack on Titans"
-            image="images/aot.jpg"
+            image="/Images/aot.jpg"
             data={["Action", "Anime", "Top"]}
           />
         </SwiperSlide>
         <SwiperSlide>
           <MovieCard
             title="Top Gun"
-            image="images/top-gun.png"
+            image="/Images/top-gun.png"
             data={["Action", "Anime", "Top"]}
           />
         </SwiperSlide>

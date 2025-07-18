@@ -1,13 +1,13 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#111] text-white px-12 py-5">
+    <footer className="bg-black text-white p-20">
       <div className="flex flex-wrap justify-between gap-y-10">
         <div className="flex flex-col basis-full md:basis-[50%] lg:basis-[25%]">
-          <img
-            src="icons/footer-logo.svg"
+          <Image
+            src="/icons/footer-logo.svg"
             width={187}
             height={57}
             alt="footer-logo"
@@ -19,27 +19,27 @@ const Footer = () => {
           </p>
           <div className="flex gap-2 mt-4">
             <div className="bg-white cursor-pointer rounded-full p-2 flex items-center justify-center">
-              <img
-                src="images/facebook.png"
+              <Image
+                src="/Images/facebook.png"
                 width={24}
                 height={24}
                 alt="Facebook"
               />
             </div>
             <div className="bg-white cursor-pointer rounded-full p-2 flex items-center justify-center">
-              <img
-                src="images/twitter.png"
+              <Image
+                src="/Images/twitter.png"
                 width={24}
                 height={24}
-                alt="Facebook"
+                alt="twitter"
               />
             </div>
             <div className="bg-white cursor-pointer rounded-full p-2 flex items-center justify-center">
-              <img
-                src="images/instagram.png"
+              <Image
+                src="/Images/instagram.png"
                 width={24}
                 height={24}
-                alt="Facebook"
+                alt="instagram"
               />
             </div>
           </div>
@@ -122,7 +122,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="text-center mt-[134px] border-t border-[#444] pt-[10px] text-sm text-[#aaa]">
+      <div className="text-center mt-12 border-t border-[#444] pt-[10px] text-sm text-[#aaa]">
         <p>&copy; All Rights Reserved. 2024 Cinesphere Movies</p>
       </div>
     </footer>
