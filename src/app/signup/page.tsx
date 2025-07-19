@@ -121,7 +121,7 @@ function Signup() {
 
   return (
     <div className="flex flex-col justify-center items-center text-white py-32 gap-10 px-14 md:flex-row md:py-32 bg-[url(/Images/log-bg.png)] md:px-32">
-      <div className="justify-center items-center text-center flex flex-col mr-32">
+      <div className="justify-center basis-1/2 items-center text-center  flex flex-col">
         <Image
           src={"/icons/nav-logo.svg"}
           width={250}
@@ -129,11 +129,11 @@ function Signup() {
           alt="logo"
           className="mb-8"
         />
-        <h2 className="text-md md:text-6xl text-center md:font-bold">
+        <h2 className="text-md text-center md:text-6xl font-bold">
           The world’s Largest Movie Library
         </h2>
       </div>
-      <div className="p-8 md:p-32 justify-center items-center rounded-xl bg-glass">
+      <div className="p-8 md:p-32 flex basis-1/2 flex-col justify-center items-center rounded-3xl backdrop-blur-md bg-glass">
         <div className="form-links flex w-full text-center gap-2 justify-center items-center">
           <h2 className="text-2xl font-bold border-r-2 pr-2 border-white">
             Signup
@@ -142,8 +142,10 @@ function Signup() {
             <Link href="/login">Login</Link>
           </h2>
         </div>
-        <div className="flex flex-col text-center gap-2 mt-3 justify-center items-center">
-          <p className="text-xs">Register Now to watch your favourite shows</p>
+        <div className="flex flex-col text-center gap-2  mt-3 justify-center items-center">
+          <p className="text-xs md:text-xl">
+            Register Now to watch your favourite shows
+          </p>
           <p className="font-bold">Or</p>
         </div>
         <form
