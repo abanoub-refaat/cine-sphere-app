@@ -1,19 +1,20 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 import React from "react";
 import Button from "@/components/Button";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const router = useRouter();
   return (
-    <nav className="nav-bar flex w-full fixed justify-between items-center flex-row z-20 bg-primary-700 bg-opacity-0 py-10 px-24 h-12">
+    <nav className="nav-bar flex w-full text-md fixed justify-between items-center flex-row z-20 bg-primary-700 bg-opacity-0 py-10 px-24 h-12">
       <div className="cursor-pointer">
-        <img
+        <Image
           src={"icons/nav-logo.svg"}
           alt="cine sphere logo"
-          style={{ width: 187, height: 30 }}
+          width={150}
+          height={30}
           onClick={() => router.push("/")}
         />
       </div>
@@ -39,13 +40,13 @@ const Navbar = () => {
       </div>
       <div className="flex gap-7 items-center">
         <div className="cursor-pointer">
-          <img
-            src={"icons/search.svg"}
-            style={{ width: 20, height: 20 }}
-            alt="search"
-          />
+          <Image src={"icons/search.svg"} width={20} height={20} alt="search" />
         </div>
-        <Button title="Join Now" hasIcon={false} />
+        <Button
+          title="Join Now"
+          hasIcon={false}
+          onClick={() => router.push("/signup")}
+        />
       </div>
     </nav>
   );

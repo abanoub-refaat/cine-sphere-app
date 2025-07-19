@@ -1,9 +1,9 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Button from "@/components/Button";
+import Image from "next/image";
 function Sidebar() {
   const router = useRouter();
   const [isClicked, setIsClicked] = useState(false);
@@ -12,15 +12,21 @@ function Sidebar() {
   return (
     <nav className="side-bar flex z-10 bg-black w-full justify-between items-center py-10 px-12 h-12">
       <div className="cursor-pointer">
-        <img
-          src={"icons/nav-logo.svg"}
+        <Image
+          src={"/icons/nav-logo.svg"}
           alt="cine sphere logo"
-          style={{ height: 30 }}
+          height={30}
+          width={150}
           onClick={() => router.push("/")}
         />
       </div>
       <div className="cursor-pointer" onClick={handelClick}>
-        <img src="icons/hamburger-menu.svg" alt="menu" />
+        <Image
+          src="/icons/hamburger-menu.svg"
+          height={30}
+          width={30}
+          alt="menu"
+        />
       </div>
       <div
         className={`fixed z-30 h-full w-full bg-black transition-all duration-300 ease-in-out p-5 ${
@@ -30,15 +36,19 @@ function Sidebar() {
         }`}
       >
         <div className="flex items-center justify-between mt-4">
-          <img
-            src={"icons/nav-logo.svg"}
+          <Image
+            src={"/icons/nav-logo.svg"}
             alt="cine sphere logo"
             className="mr-60"
+            height={30}
+            width={187}
             style={{ height: 30 }}
             onClick={() => router.push("/")}
           />
-          <img
-            src={"icons/x-mark.svg"}
+          <Image
+            src={"/icons/x-mark.svg"}
+            height={30}
+            width={30}
             style={{ width: 20, height: 20 }}
             alt="search"
             className="cursor-pointer"
@@ -82,10 +92,16 @@ function Sidebar() {
           </Link>
         </div>
         <div className="flex gap-28 items-center justify-center px-2">
-          <Button title="Join Now" hasIcon={false} />
+          <Button
+            title="Join Now"
+            hasIcon={false}
+            onClick={() => router.push("/signup")}
+          />
           <div className="cursor-pointer">
-            <img
-              src={"icons/search.svg"}
+            <Image
+              src={"/icons/search.svg"}
+              height={20}
+              width={20}
               style={{ width: 20, height: 20 }}
               alt="search"
             />
