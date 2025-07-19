@@ -16,7 +16,7 @@ function Sidebar() {
           src={"/icons/nav-logo.svg"}
           alt="cine sphere logo"
           height={30}
-          width={187}
+          width={150}
           onClick={() => router.push("/")}
         />
       </div>
