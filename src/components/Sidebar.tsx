@@ -92,7 +92,11 @@ function Sidebar() {
           </Link>
         </div>
         <div className="flex gap-28 items-center justify-center px-2">
-          <Button title="Join Now" hasIcon={false} />
+          <Button
+            title="Join Now"
+            hasIcon={false}
+            onClick={() => router.push("/signup")}
+          />
           <div className="cursor-pointer">
             <Image
               src={"/icons/search.svg"}

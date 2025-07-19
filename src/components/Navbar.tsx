@@ -45,7 +45,7 @@ const Navbar = () => {
         <Button
           title="Join Now"
           hasIcon={false}
-          onClick={() => router.push("/register")}
+          onClick={() => router.push("/signup")}
         />
       </div>
     </nav>
