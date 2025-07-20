@@ -1,9 +1,8 @@
-"use client";
-import React from "react";
 import Login from "@/components/Login";
+import React from "react";
 
-function LoginComponent() {
+function Page() {
   return <Login />;
 }
 
-export default LoginComponent;
+export default Page;
