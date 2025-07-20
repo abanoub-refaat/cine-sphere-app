@@ -25,7 +25,7 @@ const Navbar = () => {
         <Link href={""} className="hover:text-primary-700">
           Shows
         </Link>
-        <Link href={""} className="hover:text-primary-700">
+        <Link href={"/fanart"} className="hover:text-primary-700">
           Fanarts
         </Link>
         <Link href={""} className="hover:text-primary-700">
