@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import Image from "next/image";
 import Link from "next/link";
@@ -120,20 +121,18 @@ function Signup() {
   };
 
   return (
-    <div className="flex flex-col h-screen justify-center items-center text-white py-24 gap-10 px-8 md:flex-row md:p-12 bg-[url(/Images/log-bg.png)]">
-      <div className="justify-center basis-1/2 items-center text-center  flex flex-col">
-        <Image
+    <div className="flex flex-col h-screen justify-center items-center text-white py-24 gap-10 px-8 md:flex-row md:p-12 bg-[url(/Images/log-bg.png)] bg-cover">
+      <div className="justify-center basis-1/2 items-center text-center  flex flex-col px-8">
+        <img
           src={"/icons/nav-logo.svg"}
-          width={250}
-          height={200}
           alt="logo"
-          className="mb-8"
+          className="mb-8 w-96 h-36"
         />
         <h2 className="text-md text-center md:text-6xl font-bold">
           The world’s Largest Movie Library
         </h2>
       </div>
-      <div className="p-8 md:p-12 flex basis-1/2 flex-col justify-center items-center rounded-3xl backdrop-blur-md bg-glass">
+      <div className="p-8 md:p-12 flex basis-1/2 flex-col justify-center items-center rounded-3xl backdrop-blur-md bg-[#594D5B] bg-opacity-20 max-w-[750px]">
         <div className="form-links flex w-full text-center gap-2 justify-center items-center">
           <h2 className="text-2xl font-bold border-r-2 pr-2 border-white">
             <Link href={"/signup"}> Signup</Link>
