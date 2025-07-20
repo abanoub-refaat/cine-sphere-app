@@ -13,11 +13,11 @@ function HomeSlider() {
       <Swiper
         pagination={true}
         modules={[Pagination]}
-        className="mySwipe text-white w-full md:h-screen lg:h-auto bg-cover"
+        className="mySwipe text-white w-full md:h-screen"
       >
         <SwiperSlide>
           <div
-            className={`bg-[url(/Images/movie-1.png)] bg-cover bg-center flex flex-col justify-start items-start gap-4 pt-3 p-6 md:pt-60 md:p-14`}
+            className={`bg-[url(/Images/movie-1.png)] md:h-screen bg-cover bg-center flex flex-col justify-end items-start gap-4 pt-3 p-6 `}
           >
             <MovieInfo
               year={2019}
@@ -30,7 +30,7 @@ function HomeSlider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-[url(/Images/movie-2.png)] bg-cover bg-center flex flex-col justify-start items-start gap-4 pt-3 p-6 md:pt-60 md:p-14">
+          <div className="bg-[url(/Images/movie-2.png)] bg-cover bg-center md:h-screen flex flex-col gap-4 pt-3 p-6 justify-end items-start">
             <MovieInfo
               year={2022}
               title="The Batman"
@@ -42,7 +42,7 @@ function HomeSlider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-[url(/Images/movie-3.png)] bg-cover bg-center flex flex-col justify-start items-start gap-4 pt-3 p-6 md:pt-60 md:p-14">
+          <div className="bg-[url(/Images/movie-3.png)] bg-cover bg-center md:h-screen flex flex-col gap-4 pt-3 p-6 justify-end items-start">
             <MovieInfo
               year={2020}
               title="Jujutsu Kaisen"
@@ -54,7 +54,7 @@ function HomeSlider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-[url(/Images/movie-4.png)] bg-cover bg-center flex flex-col justify-start items-start gap-4 pt-3 p-6 md:pt-60 md:p-14">
+          <div className="bg-[url(/Images/movie-4.png)] bg-cover bg-center md:h-screen flex flex-col gap-4 pt-3 p-6 justify-end items-start">
             <MovieInfo
               year={2023}
               title="Spiderman: Across the Spiderverse"
@@ -66,7 +66,7 @@ function HomeSlider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-[url(/Images/movie-5.png)] bg-cover bg-center flex flex-col justify-start items-start gap-4 pt-3 p-6 md:pt-60 md:p-14">
+          <div className="bg-[url(/Images/movie-5.png)] bg-cover bg-center md:h-screen flex flex-col gap-4 pt-3 p-6 justify-end items-start">
             <MovieInfo
               year={2023}
               title="Attack on Titan"

@@ -18,23 +18,27 @@ const Navbar = () => {
           onClick={() => router.push("/")}
         />
       </div>
-      <div className="hidden sm:flex text-white gap-16 text-sm justify-center items-center">
-        <Link href={""} className="hover:text-primary-700">
+      <div className="hidden sm:flex text-white gap-6 text-md justify-center items-center">
+        <Link href={"/upcomming"} className="hover:text-primary-700">
           Upcomming
         </Link>
-        <Link href={""} className="hover:text-primary-700">
+        <Link href={"shows"} className="hover:text-primary-700">
           Shows
         </Link>
         <Link href={"/fanart"} className="hover:text-primary-700">
           Fanarts
         </Link>
-        <Link href={""} className="hover:text-primary-700">
+        <Link href={"plans"} className="hover:text-primary-700">
           Plans
         </Link>
-        <Link href={""} title="Community" className="hover:text-primary-700">
+        <Link
+          href={"community"}
+          title="Community"
+          className="hover:text-primary-700"
+        >
           Community
         </Link>
-        <Link href={""} className="hover:text-primary-700">
+        <Link href={"account"} className="hover:text-primary-700">
           Account
         </Link>
       </div>

@@ -35,7 +35,7 @@ const TextInputLight = ({
         className={`flex items-center justify-center bg-transparent border border-primary-300 rounded-md outline-none p-4 px-10 w-full ${className}`}
       >
         <input
-          className="transition-colors duration-200 bg-transparent outline-none"
+          className="transition-colors duration-200 bg-transparent outline-none placeholder:text-white"
           id={id}
           name={name}
           type={type}
