@@ -1,6 +1,8 @@
+'use client';
 import React from "react";
 import Input from "./Input";  
 import Button from "./Button";
+import PhoneInputField from "./PhoneInputField";
 
 function Support() {
   return (
@@ -34,19 +36,24 @@ function Support() {
             <Input label="Email" placeholder="Enter your Email" />
           </div>
           <div className="flex-1">
-            <label className="text-sm text-white mb-1 block">Phone Number</label>
-            <div className="flex border border-primary-500 rounded-md px-3 py-2 items-center">
-              <img src="https://flagcdn.com/w40/us.png" alt="US Flag" className="w-5 h-5 mr-2" />
-              <input
-                type="tel"
-                placeholder="Enter Phone Number"
-                className="bg-transparent focus:outline-none text-sm w-full placeholder:text-gray-400"
-              />
-            </div>
+            <label className="text-sm text-white mb-1 block font-semibold">Phone Number</label>
+
+  <PhoneInputField
+    id="phone"
+    name="phone"
+    required={true}
+    onChange={(e) => console.log(e.target.value)}
+    onBlur={() => {}}
+    value=""
+    placeholder="+1 (555) 000-0000"
+    defaultCountry="us"
+  />
+
+
           </div>
         </div>
         <div>
-          <label className="text-sm font-medium text-white mb-1 block">Message</label>
+          <label className="text-sm font-semibold text-white mb-1 block">Message</label>
           <textarea
             rows={4}
             placeholder="Enter your query"

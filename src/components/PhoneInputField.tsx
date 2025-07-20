@@ -34,7 +34,7 @@ const PhoneInputField: React.FC<PhoneInputFieldProps> = ({
           error ? "text-red-500" : "text-white"
         }`}
       >
-        {label} {required && <span className="text-purple-500">*</span>}
+        {label} {required && <span className="text-purple-500"></span>}
       </label>
       <PhoneInput
         defaultCountry={defaultCountry}
@@ -48,10 +48,10 @@ const PhoneInputField: React.FC<PhoneInputFieldProps> = ({
           required,
           placeholder,
         }}
-        inputClassName={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 ${
+        inputClassName={`w-full px-4 py-2 border rounded-md bg-transparent text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 ${
           error
             ? "border-red-500 focus:ring-red-300"
-            : "border-gray-300 focus:ring-purple-500"
+            : "border-primary-500 focus:ring-primary-500"
         }`}
       />
       {error && <p className="mt-1 text-sm text-red-500">{error}</p>}

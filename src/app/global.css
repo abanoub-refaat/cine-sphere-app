@@ -69,3 +69,16 @@
   height: 40px !important;
   right: 10px !important;
 }
+
+.react-international-phone-input {
+  background: transparent !important;
+  color: white !important;
+  border: 1px solid #7300ff !important;
+}
+
+.react-international-phone-country-selector-button {
+  background: transparent !important;
+  color: white !important;
+  border: 1px solid #7300ff !important;
+  padding: 5px !important;
+}
