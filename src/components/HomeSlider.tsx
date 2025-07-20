@@ -13,7 +13,7 @@ function HomeSlider() {
       <Swiper
         pagination={true}
         modules={[Pagination]}
-        className="mySwipe text-white w-full"
+        className="mySwipe text-white w-full md:h-screen lg:h-auto bg-cover"
       >
         <SwiperSlide>
           <div
