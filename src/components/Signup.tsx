@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import TextInputLight from "@/components/TextInputLight";
@@ -128,7 +127,7 @@ function Signup() {
           alt="logo"
           className="mb-8 w-96 h-36"
         />
-        <h2 className="text-md text-center md:text-6xl font-bold">
+        <h2 className="text-md text-center md:text-5xl font-extrabold">
           The world’s Largest Movie Library
         </h2>
       </div>

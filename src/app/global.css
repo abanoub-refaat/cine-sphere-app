@@ -55,10 +55,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40px 40px;
-  width: 40px !important;
-  height: 40px !important;
+  width: 80px !important;
+  height: 80px !important;
   top: unset !important;
-  bottom: 33px;
+  bottom: 0px;
   right: 75px;
   left: unset !important;
 }
@@ -68,12 +68,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40px 40px;
-  width: 40px !important;
-  height: 40px !important;
-  right: 10px !important;
+  width: 80px !important;
+  height: 80px !important;
+  right: 25px !important;
   top: unset !important;
-
-  bottom: 33px;
+  bottom: 0;
 }
 
 .react-international-phone-input {

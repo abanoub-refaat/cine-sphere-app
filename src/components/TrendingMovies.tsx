@@ -18,8 +18,8 @@ function TrendingMovies() {
         spaceBetween={20}
         navigation={true}
         modules={[Navigation]}
-        style={{ paddingBottom: 20, gap: 20 }}
-        className="mySwiper py-10 bg-black"
+        style={{ paddingBottom: 80, gap: 20 }}
+        className="default-swipper py-10 bg-black"
         breakpoints={{
           320: {
             slidesPerView: 2,

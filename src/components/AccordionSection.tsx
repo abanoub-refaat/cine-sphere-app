@@ -14,7 +14,7 @@ function AccordionSection() {
       <h2 className="m-4 text-center text-3xl font-bold text-white">
         Frequently asked questions
       </h2>
-      <div className="flex gap-5 transition-all duration-300">
+      <div className="flex flex-col md:flex-row gap-5 transition-all duration-300">
         <div className="flex flex-col gap-5 items-center justify-center">
           <Accordion
             id={0}
