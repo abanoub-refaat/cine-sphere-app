@@ -18,25 +18,25 @@ function Accordion({ question, answer, id, isOpen, onToggle }: Props) {
         onClick={() => onToggle(id)}
       >
         <span className="text-lg font-medium">{question}</span>
-        {isOpen ? (
-          <img
-            src="icons/btn-dropdown-reverse-2.svg"
-            alt="button dropdown menu"
-            style={{ width: 30, height: 30 }}
-          />
-        ) : (
-          <img
-            src="icons/btn-dropdown.svg"
-            alt="button dropdown menu"
-            style={{ width: 30, height: 30 }}
-          />
-        )}
+
+        <img
+          src="icons/btn-dropdown.svg"
+          alt="button dropdown menu"
+          style={{ width: 30, height: 30 }}
+          className={`transition-all delay-75 duration-300 ${
+            isOpen ? "rotate-180" : ""
+          }`}
+        />
       </button>
-      {isOpen ? (
-        <span className="text-lg font-medium mt-4 duration-300">{answer}</span>
-      ) : (
-        ""
-      )}
+
+      <span
+        className={
+          `text-lg font-medium mt-4 duration-300 h-0 overflow-hidden transition-all ease-in-out ` +
+          (isOpen ? "h-40" : "")
+        }
+      >
+        {answer}
+      </span>
     </div>
   );
 }

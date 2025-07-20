@@ -69,7 +69,7 @@ function Sidebar() {
             Shows
           </Link>
           <Link
-            href={""}
+            href={"/fanart"}
             className="hover:text-primary-700 bg-primary-500  p-5 w-full"
           >
             Fanarts

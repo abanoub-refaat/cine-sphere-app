@@ -19,8 +19,8 @@ function LatestRelease() {
         spaceBetween={20}
         navigation={true}
         modules={[Navigation]}
-        style={{ paddingBottom: 20, gap: 20 }}
-        className="mySwiper py-10 bg-black"
+        style={{ paddingBottom: 90, gap: 20 }}
+        className="default-swipper py-10 bg-black"
         breakpoints={{
           320: {
             slidesPerView: 2,
@@ -60,6 +60,48 @@ function LatestRelease() {
             title="Fast X"
             image="/Images/Fast X.png"
             data={["Action", "Thriller"]}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <MovieCard
+            title="Dune Part II"
+            image="/Images/dunte.png"
+            data={["Action", "Thriller"]}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <MovieCard
+            title="John Wick 4"
+            image="/Images/jw-4.png"
+            data={["Action", "Thriller"]}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <MovieCard
+            title="The Last Of Us"
+            image="/Images/last-of-us (1).png"
+            data={["Action", "Thriller"]}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <MovieCard
+            title="The Marvels"
+            image="/Images/the-marvels.png"
+            data={["Action", "Thriller"]}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <MovieCard
+            title="Attack on Titans"
+            image="/Images/aot.jpg"
+            data={["Action", "Anime", "Top"]}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <MovieCard
+            title="Top Gun"
+            image="/Images/top-gun.png"
+            data={["Action", "Anime", "Top"]}
           />
         </SwiperSlide>
         <SwiperSlide>
