@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Button from "./Button";
 
 interface PlanCardProps {
@@ -34,18 +35,24 @@ function PlanCard({ title, price, features }: PlanCardProps) {
 }
 
 function ChooseYourPlan() {
+  const [isMonthlyClicked, setIsMonthlyClicked] = React.useState(true);
+  const [isYearlyClicked, setIsYearlyClicked] = React.useState(false);
+  const handleClick = () => {
+    setIsMonthlyClicked(!isMonthlyClicked);
+    setIsYearlyClicked(!isYearlyClicked);
+  }
   return (
-    <div className="flex flex-col items-center p-8 bg-black text-white">
+    <div className="flex flex-col items-center p-8 bg-black text-white py-28">
       <h1 className="text-3xl font-bold mb-2">Choose Your Plan</h1>
       <p className="text-m text-white mb-6">
         Choose your plan to enjoy unlimited access to your Favourite Movies and Shows
       </p>
 
       <div className="inline-flex border border-primary-700 rounded-full mb-10 overflow-hidden">
-        <button className="px-8 py-4 text-sm font-medium bg-primary-700 text-white transition">
+        <button onClick={handleClick} className={`px-8 py-4 text-sm font-medium ${isMonthlyClicked? "bg-primary-700": "" }  text-white transition`}>
           Monthly
         </button>
-        <button className="px-8 py-4 text-sm font-medium text-white transition">
+        <button onClick={handleClick} className={`px-8 py-4 text-sm font-medium ${isYearlyClicked? "bg-primary-700": "" }  text-white transition`}>
           Yearly
         </button>
       </div>

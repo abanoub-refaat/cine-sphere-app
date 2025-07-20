@@ -6,8 +6,8 @@ import PhoneInputField from "./PhoneInputField";
 
 function Support() {
   return (
-    <div className="flex flex-wrap justify-between p-8 bg-black text-white">
-      <div className="basis-full basis-[30%]">
+    <div className="flex flex-wrap flex-row justify-between p-8 bg-black text-white py-28">
+      <div className="basis-full basis-[20%]">
         <h1 className="text-3xl font-bold mb-4">
           We are here for you<br />whenever you need!
         </h1>
@@ -17,7 +17,7 @@ function Support() {
         <img
           src="/images/support.png"
           alt="Support"
-          className="rounded-xl w-full max-w-s"
+          className="flex flex-wrap max-w-sm"
         />
       </div>
 
