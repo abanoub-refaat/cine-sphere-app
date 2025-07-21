@@ -15,7 +15,7 @@ function FanartPreview({
 }: Props) {
   return (
     <div
-      className={`flex flex-col justify-end items-start w-screen bg-center md:h-screen p-10 md:p-24 ${className} bg-cover`}
+      className={`flex flex-col justify-end items-start bg-center md:h-screen p-10 md:p-24 ${className} bg-cover`}
     >
       <div className="text-white md:w-[50%]">
         <h2 className="font-bold text-lg md:text-4xl my-1 md:my-3">
