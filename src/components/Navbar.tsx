@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <nav
       className={`nav-bar flex w-full text-md fixed justify-between items-center flex-row z-20  py-10 px-24 h-12 ${
-        background ? `bg-dark` : `bg-transparent`
+        background ? `bg-dark shadow-xl` : `bg-transparent`
       }`}
     >
       <div className="cursor-pointer">
