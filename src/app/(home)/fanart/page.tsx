@@ -10,7 +10,7 @@ function Page() {
   return (
     <>
       <FanartPreview
-        className="bg-[url(/Images/fanart-2.png)] w-full"
+        className="bg-[url(/Images/fanart-1.png)] w-full"
         headerText="Welcome to the Cine Sphere Fan Art Gallery"
         subHeader="Unleash Your Creativity"
         paragraphText="          Dive into a world of imagination with Cine Sphere’s Fan Art Gallery.
