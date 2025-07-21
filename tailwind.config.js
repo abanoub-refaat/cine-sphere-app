@@ -25,7 +25,7 @@ module.exports = {
         white: "#FFFFFF",
         starColor: "#FFC700",
         black: "#000000",
-        glass: "#E6D7E433",
+        glass: "#0f0b0e33",
       },
       fontFamily: {
         sans: ["Poppins", "sans-serif"],
