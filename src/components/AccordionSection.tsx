@@ -76,11 +76,7 @@ function AccordionSection() {
           />
         </div>
       </div>
-      <Button
-        title="Ask a Question"
-        hasIcon={false}
-        styles="w-full sm:w-auto p-20"
-      />
+      <Button title="Ask a Question" hasIcon={false} styles="p-26" />
     </div>
   );
 }
