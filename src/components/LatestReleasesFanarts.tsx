@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const LatesReleasesFanarts = () => {
   return (
-    <div className="p-8">
+    <div className="p-12">
       <div className="flex justify-between items-center">
         <h2 className="text-xl sm:text-3xl font-bold text-white my-8">
           Latest Releases
@@ -21,8 +21,8 @@ const LatesReleasesFanarts = () => {
         spaceBetween={20}
         navigation={true}
         modules={[Navigation]}
-        style={{ paddingBottom: 20, gap: 20 }}
-        className="mySwiper bg-black"
+        style={{ paddingBottom: 80, gap: 20 }}
+        className="default-swipper bg-black"
         breakpoints={{
           320: {
             slidesPerView: 2,

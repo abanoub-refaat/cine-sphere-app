@@ -147,7 +147,7 @@ function Signup() {
           <p className="font-bold">Or</p>
         </div>
         <form
-          className="flex flex-col gap-4 mt-8"
+          className="flex flex-col gap-4 mt-2"
           onBlur={() => handleBlur}
           onSubmit={handleClickSubmit}
         >

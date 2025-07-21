@@ -35,21 +35,18 @@ function Sidebar() {
             : "right-0 translate-x-full top-0"
         }`}
       >
-        <div className="flex items-center justify-between mt-4">
+        <div className="flex pt-8 items-center gap-24 justify-between">
           <Image
             src={"/icons/nav-logo.svg"}
             alt="cine sphere logo"
-            className="mr-60"
             height={30}
-            width={187}
-            style={{ height: 30 }}
+            width={150}
             onClick={() => router.push("/")}
           />
           <Image
             src={"/icons/x-mark.svg"}
-            height={30}
-            width={30}
-            style={{ width: 20, height: 20 }}
+            height={20}
+            width={20}
             alt="search"
             className="cursor-pointer"
             onClick={handelClick}
@@ -57,55 +54,56 @@ function Sidebar() {
         </div>
         <div className="flex flex-col text-white text-sm gap-5 items-center py-5 w-full overflow-auto text-center">
           <Link
-            href={""}
-            className="hover:text-primary-700 bg-primary-500 p-5 w-full"
+            href={"/upcomming"}
+            className="text-white text-lg p-5 w-full"
+            onClick={handelClick}
           >
             Upcomming
           </Link>
           <Link
-            href={""}
-            className="hover:text-primary-700 bg-primary-400  p-5 w-full"
-          >
-            Shows
-          </Link>
-          <Link
             href={"/fanart"}
-            className="hover:text-primary-700 bg-primary-500  p-5 w-full"
+            className="text-white text-lg p-5 w-full"
+            onClick={handelClick}
           >
             Fanarts
           </Link>
           <Link
-            href={""}
-            className="hover:text-primary-700 bg-primary-400  p-5 w-full"
+            href={"/subscription"}
+            className="text-white text-lg p-5 w-full"
+            onClick={handelClick}
           >
             Plans
           </Link>
           <Link
-            href={""}
+            href={"/community"}
             title="Community"
-            className="hover:text-primary-700 bg-primary-500  p-5 w-full"
+            className="text-white text-lg p-5 w-full"
+            onClick={handelClick}
           >
             Community
           </Link>
-          <Link href={""} className="hover:text-primary-700  p-5 w-full">
-            Account
+          <Link
+            href={"/support"}
+            className="text-white text-lg p-5 w-full"
+            onClick={handelClick}
+          >
+            Support
           </Link>
         </div>
-        <div className="flex gap-28 items-center justify-center px-2">
-          <Button
-            title="Join Now"
-            hasIcon={false}
-            onClick={() => router.push("/signup")}
-          />
+        <div className="flex items-center justify-center gap-9 px-2">
           <div className="cursor-pointer">
             <Image
               src={"/icons/search.svg"}
               height={20}
               width={20}
-              style={{ width: 20, height: 20 }}
               alt="search"
             />
           </div>
+          <Button
+            title="Join Now"
+            hasIcon={false}
+            onClick={() => router.push("/signup")}
+          />
         </div>
       </div>
     </nav>
