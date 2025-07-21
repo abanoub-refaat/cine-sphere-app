@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const TrendingFanarts = () => {
   return (
-    <div className="p-12">
+    <div className="px-12 ">
       <div className="flex justify-between items-center">
         <h2 className="text-xl sm:text-3xl font-bold text-white my-8">
           Trending

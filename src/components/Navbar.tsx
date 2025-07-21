@@ -42,7 +42,7 @@ const Navbar = () => {
         />
       </div>
       <div className="hidden sm:flex text-white gap-6 text-md justify-center items-center">
-        <Link href={"/upcomming"} className="hover:text-primary-700">
+        <Link href={"/upcomings"} className="hover:text-primary-700">
           Upcomming
         </Link>
         <Link href={"/fanart"} className="hover:text-primary-700">

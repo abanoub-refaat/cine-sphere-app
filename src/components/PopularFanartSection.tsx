@@ -59,32 +59,38 @@ function PopularFanartSection() {
         <SwiperSlide>
           <Category
             categoryName="Superheros"
-            backgourndImage="bg-[url(/Images/fanart-3.png)]"
+            backgourndImage="bg-[url(/Images/category-1.png)]"
           />
         </SwiperSlide>
         <SwiperSlide>
           <Category
             categoryName="Fantacy"
-            backgourndImage="bg-[url(/Images/fanart-1.png)]"
+            backgourndImage="bg-[url(/Images/category-2.png)]"
           />
         </SwiperSlide>
         <SwiperSlide>
           <Category
             categoryName="Marvels"
-            backgourndImage="bg-[url(/Images/fanart-2.png)]"
+            backgourndImage="bg-[url(/Images/category-3.png)]"
           />
         </SwiperSlide>
         <SwiperSlide>
           <Category
             categoryName="Horror"
-            backgourndImage="bg-[url(/Images/jw-4.png)]"
+            backgourndImage="bg-[url(/Images/category-1.png)]"
           />
         </SwiperSlide>
         <SwiperSlide>
-          <Category categoryName="Games" />
+          <Category
+            categoryName="Games"
+            backgourndImage="bg-[url(/Images/category-2.png)]"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Category categoryName="Anime" />
+          <Category
+            categoryName="Anime"
+            backgourndImage="bg-[url(/Images/fanart-3.png)]"
+          />
         </SwiperSlide>
       </Swiper>
     </div>

@@ -54,7 +54,7 @@ function Sidebar() {
         </div>
         <div className="flex flex-col text-white text-sm gap-5 items-center py-5 w-full overflow-auto text-center">
           <Link
-            href={"/upcomming"}
+            href={"/upcomings"}
             className="text-white text-lg p-5 w-full"
             onClick={handelClick}
           >

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white ">
       <div className="flex flex-wrap justify-between p-16 ">
-        <div className="flex flex-col basis-full md:basis-[50%] lg:basis-[30%] gap-5">
+        <div className="flex flex-col basis-full md:basis-[25%] gap-5">
           <Image
             src="/icons/footer-logo.svg"
             width={150}
@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="basis-full md:basis-[50%] lg:basis-[25%]">
+        <div className="basis-full md:basis-[25%]">
           <ul className="list-none flex flex-col gap-10">
             <li>
               <h3 className="text-lg font-semibold">Company</h3>
@@ -71,9 +71,9 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="basis-full md:basis-[50%] lg:basis-[25%]">
-          <h3 className="mb-2 text-lg font-semibold">Help & Support</h3>
-          <ul className="list-none p-4">
+        <div className="basis-full md:basis-[25%]">
+          <ul className="list-none flex flex-col gap-10">
+            <li className="mb-2 text-lg font-semibold">Help & Support</li>
             <li>
               <a href="#" className="text-white underline hover:text-gray-400">
                 Help Center
@@ -97,9 +97,9 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="basis-full md:basis-[50%] lg:basis-[25%]">
-          <h3 className="mb-2 text-lg font-semibold">Legal</h3>
-          <ul className="list-none p-4">
+        <div className="basis-full md:basis-[25%]">
+          <ul className="list-none flex flex-col gap-10">
+            <li className="mb-2 text-lg font-semibold">Legal</li>
             <li>
               <a href="#" className="text-white underline hover:text-gray-400">
                 Terms of Service

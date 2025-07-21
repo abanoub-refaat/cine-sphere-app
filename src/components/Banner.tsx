@@ -20,7 +20,11 @@ function Banner({ ...props }: Props) {
         <p className="text-xs md:text-lg w-full md:w-[50%] mb-4 text-white mt-2">
           {props.subTitle}
         </p>
-        <Button title={props.buttonTitle} hasIcon={false} />
+        <Button
+          title={props.buttonTitle}
+          hasIcon={false}
+          styles="px-2 w-[15%]"
+        />
       </div>
     </div>
   );
