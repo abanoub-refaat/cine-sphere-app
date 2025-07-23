@@ -20,13 +20,13 @@ function Page() {
       />
       <PopularFanartSection />
       <TrendingFanarts />
-      <LatesReleasesFanarts />
       <Banner
         backgroundImage="bg-[url(/Images/fanart-banner.png)]"
         mainTitle="Bring Your Visions to Cine Sphere!"
         subTitle="Have a knack for creating amazing fan art? Don’t keep it to yourself! Share your talent with the Cine Sphere community and let the world see your artistic prowess. Your art could be the next big highlight!"
         buttonTitle="Make Creator Profile"
       />
+      <LatesReleasesFanarts />
       <FooterEmail />
     </>
   );

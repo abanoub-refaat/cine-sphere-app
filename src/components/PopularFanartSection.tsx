@@ -92,6 +92,18 @@ function PopularFanartSection() {
             backgourndImage="bg-[url(/Images/fanart-3.png)]"
           />
         </SwiperSlide>
+        <SwiperSlide>
+          <Category
+            categoryName="Games"
+            backgourndImage="bg-[url(/Images/category-2.png)]"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Category
+            categoryName="Anime"
+            backgourndImage="bg-[url(/Images/fanart-3.png)]"
+          />
+        </SwiperSlide>
       </Swiper>
     </div>
   );

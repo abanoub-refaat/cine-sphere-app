@@ -1,4 +1,4 @@
-"use clinet";
+"use client";
 import React from "react";
 import Image from "next/image";
 
@@ -24,28 +24,42 @@ const TextInputLight = ({
   name,
   value,
   onChange,
+  onBlur,
   error,
   type = "text",
+  required,
   icon,
   className,
 }: Props) => {
   return (
-    <div className="w-full px-2 my-4 md:mb-0">
+    <div className="w-full">
       <div
-        className={`flex items-center justify-center bg-transparent border border-primary-300 rounded-md outline-none p-4 px-10 w-full ${className}`}
+        className={`flex items-center bg-transparent border border-primary-300 rounded-md outline-none p-5 gap-3 ${className}`}
       >
         <input
-          className="transition-colors duration-200 bg-transparent outline-none placeholder:text-white"
+          className="flex-1 bg-transparent outline-none placeholder:text-white text-white w-full"
           id={id}
           name={name}
           type={type}
           value={value}
           onChange={onChange}
+          onBlur={onBlur}
           placeholder={placeholder}
+          required={required}
         />
-        <Image src={icon ?? ""} alt="icon" width={30} height={30} />
+        {icon && (
+          <Image
+            src={icon}
+            alt="input icon"
+            width={20}
+            height={20}
+            className="flex-shrink-0"
+          />
+        )}
       </div>
-      {error && <span className="text-red-400">{error}</span>}
+      {error && (
+        <span className="text-red-400 text-sm mt-1 block">{error}</span>
+      )}
     </div>
   );
 };
